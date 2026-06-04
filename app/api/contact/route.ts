@@ -8,7 +8,7 @@ export async function POST(req: Request) {
   }
 
   const body = {
-    personalizations: [{ to: [{ email: "support@empreus.com.au", name: "Empreus IT Support" }], subject: `New Contact Form Enquiry from ${name}` }],
+    personalizations: [{ to: [{ email: "info@empreus.com.au", name: "Empreus IT Support" }], subject: `New Contact Form Enquiry from ${name}` }],
     from: { email: "noreply@empreusmail.com.au", name: "Empreus Website" },
     reply_to: { email, name },
     content: [{ type: "text/html", value: `<h2>New Contact Form Submission</h2><table cellpadding="8" style="font-family:sans-serif;font-size:14px;"><tr><td><strong>Name</strong></td><td>${name}</td></tr><tr><td><strong>Organisation</strong></td><td>${organisation || "—"}</td></tr><tr><td><strong>Email</strong></td><td>${email}</td></tr><tr><td><strong>Telephone</strong></td><td>${telephone || "—"}</td></tr><tr><td><strong>Service</strong></td><td>${service || "—"}</td></tr><tr><td><strong>Message</strong></td><td>${message}</td></tr></table>` }],
