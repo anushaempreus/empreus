@@ -7,13 +7,18 @@ export const metadata: Metadata = {
   title: { default: "Empreus IT Support | IT Support Canberra", template: "%s | Empreus IT Support" },
   description: "A small Canberra studio for managed IT, cybersecurity, cloud, and bespoke software. Built so you can stop thinking about IT. Considered IT, since 2016.",
   metadataBase: new URL("https://empreusitsupport.com.au"),
-  openGraph: { siteName: "Empreus IT Support", locale: "en_AU", type: "website" },
-  twitter: { card: "summary_large_image" },
+  openGraph: {
+    siteName: "Empreus IT Support",
+    locale: "en_AU",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Empreus IT Support" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og-image.jpg"] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-AU">
+    <html lang="en-AU" data-scroll-behavior="smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
