@@ -40,6 +40,7 @@ export default function Footer() {
             ["/director","From the Director"],
             ["/onboarding","Onboarding"],
             ["/journal","Journal"],
+            ["/heritage-tiers","Heritage Tiers"],
           ]} />
           <FootCol title="Client" links={[
             ["/portals","Portals"],

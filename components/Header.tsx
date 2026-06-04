@@ -14,6 +14,7 @@ const NAV = [
   { href: "/journal", label: "Journal" },
   { href: "/portals", label: "Portals" },
   { href: "/contact", label: "Contact" },
+  { href: "/heritage-tiers", label: "Heritage Tiers" },
 ];
 
 const SERVICES = [
