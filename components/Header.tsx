@@ -12,13 +12,13 @@ const NAV = [
   { href: "/director", label: "Director" },
   { href: "/onboarding", label: "Onboarding" },
   { href: "/journal", label: "Journal" },
-  { href: "/portals", label: "Portals" },
   { href: "/contact", label: "Contact" },
   { href: "/heritage-tiers", label: "Heritage Tiers" },
 ];
 
 const SERVICES = [
   { href: "/services/managed-it", label: "Managed IT Services" },
+  { href: "/services/managed-ai", label: "Managed AI Services" },
   { href: "/services/enterprise-government", label: "Enterprise & Government" },
   { href: "/services/it-as-a-service", label: "Your IT as a Service" },
   { href: "/services/cloud", label: "Cloud Service" },
@@ -49,8 +49,6 @@ export default function Header() {
       <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"8px clamp(16px,3.5vw,48px)", fontSize:11, color:"var(--ink-mute)", borderBottom:"1px solid var(--rule-soft)" }}>
         <span>Australia · English</span>
         <div style={{ display:"flex", gap:24, alignItems:"center" }}>
-          <Link href="/portals" style={{ transition:"color .2s" }}>Client Portal</Link>
-          <span style={{ color:"var(--rule)" }}>|</span>
           <Link href="/service-request" style={{ transition:"color .2s" }}>Service Request</Link>
           <span style={{ color:"var(--rule)" }}>|</span>
           <a href="tel:0261891322">02 6189 1322</a>
@@ -71,7 +69,6 @@ export default function Header() {
           </Link>
 
           <div className="h-side-right" style={{ display:"flex", gap:22, fontSize:12, color:"var(--ink)", alignItems:"center", justifyContent:"flex-end" }}>
-            <Link href="/portals" style={{ transition:"color .2s" }} onMouseEnter={e=>(e.currentTarget.style.color="var(--orange)")} onMouseLeave={e=>(e.currentTarget.style.color="var(--ink)")}>Portal</Link>
             <Link href="/service-request" style={{ transition:"color .2s" }} onMouseEnter={e=>(e.currentTarget.style.color="var(--orange)")} onMouseLeave={e=>(e.currentTarget.style.color="var(--ink)")}>Service Request</Link>
           </div>
 
@@ -118,7 +115,7 @@ export default function Header() {
           ))}
         </nav>
         <div style={{ marginTop:"auto", paddingTop:28, fontSize:13, color:"var(--ink-mute)", lineHeight:1.7 }}>
-          02 6189 1322<br />support@empreus.com.au<br />Unit 19/63 Wollongong St, Fyshwick ACT 2609
+          02 6189 1322<br />support@empreus.com.au<br />Unit 18/63 Wollongong St, Fyshwick ACT 2609
         </div>
       </div>
 

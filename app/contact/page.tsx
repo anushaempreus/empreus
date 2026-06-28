@@ -36,7 +36,7 @@ export default function Contact() {
 
         <div>
           <h3 style={{ fontFamily:slab, fontWeight:500, fontSize:20, marginBottom:24 }}>The Studio</h3>
-          {[["Address","Unit 19, 63 Wollongong Street\nFyshwick ACT 2609"],["Telephone","02 6189 1322"],["General","support@empreus.com.au"],["New Engagements","darko@empreus.com.au"],["Hours","Monday – Friday\n9:00 AM – 5:00 PM\n24/7 monitoring for managed clients"],["Business","Empreus Support Pty Ltd\nABN 65 611 219 188"]].map(([k,v])=>(
+          {[["Address","Unit 18, 63 Wollongong Street\nFyshwick ACT 2609"],["Telephone","02 6189 1322"],["General","support@empreus.com.au"],["New Engagements","darko@empreus.com.au"],["Hours","Monday – Friday\n9:00 AM – 5:00 PM\n24/7 monitoring for managed clients"],["Business","Empreus Support Pty Ltd\nABN 65 611 219 188"]].map(([k,v])=>(
             <div key={k} style={{ marginBottom:26 }}>
               <strong style={{ display:"block", fontSize:10, letterSpacing:".28em", textTransform:"uppercase", color:"var(--ink-faint)", marginBottom:8, fontWeight:500 }}>{k}</strong>
               <span style={{ fontFamily:slab, fontSize:17, color:"var(--ink)", lineHeight:1.45, display:"block", whiteSpace:"pre-line" }}>{v}</span>

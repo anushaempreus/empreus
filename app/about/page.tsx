@@ -13,7 +13,7 @@ export default function About() {
         <p style={{ fontSize:16, lineHeight:1.8, marginBottom:22 }}>We hold a simple conviction: technology, at its best, is an act of craftsmanship. The wiring should be neat even where nobody sees it. The documentation should make sense to the next engineer who picks it up. The tools should be chosen on their merits — not because a vendor took us to lunch.</p>
 
         <h2 style={{ fontFamily:slab, fontWeight:500, fontSize:"clamp(24px,2.6vw,32px)", lineHeight:1.2, margin:"46px 0 18px" }}>What we do</h2>
-        <p style={{ fontSize:16, lineHeight:1.8, marginBottom:22 }}>We run thirteen services across daily IT support, security, cloud, software development, communication, and enterprise governance. Our clients are ACT government departments, Canberra businesses, and a handful of national organisations. We&apos;re a member of the DTA Hardware Marketplace Panel, Australian-owned and operated, and locally accountable.</p>
+        <p style={{ fontSize:16, lineHeight:1.8, marginBottom:22 }}>We run fourteen services across daily IT support, managed AI, security, cloud, software development, communication, and enterprise governance. Our clients are ACT government departments, Canberra businesses, and a handful of national organisations. We&apos;re a member of the DTA Hardware Marketplace Panel, Australian-owned and operated, and locally accountable.</p>
 
         <h2 style={{ fontFamily:slab, fontWeight:500, fontSize:"clamp(24px,2.6vw,32px)", lineHeight:1.2, margin:"46px 0 18px" }}>How we work</h2>
         <p style={{ fontSize:16, lineHeight:1.8, marginBottom:20 }}>Our stack is deliberate and small. SuperOps for RMM and PSA. Huntress for managed EDR. Proofpoint for email security. Cove for Microsoft 365 backup. Hudu for documentation. Every managed client gets the full stack. Every engagement gets documentation. Every escalation goes to a named person.</p>
@@ -23,7 +23,7 @@ export default function About() {
 
         <hr style={{ border:"none", borderTop:"1px solid var(--rule-soft)", margin:"40px 0" }} />
         <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:24 }} className="facts-grid">
-          {[["Founded","2016, Canberra"],["Entity","Empreus Support Pty Ltd · ABN 65 611 219 188"],["Address","Unit 19, 63 Wollongong Street, Fyshwick ACT 2609"],["Panels","DTA Hardware Marketplace"],["Services","Thirteen, under one roof"],["Hours","Mon–Fri, 9 AM – 5 PM · 24/7 monitoring"]].map(([k,v])=>(
+          {[["Founded","2016, Canberra"],["Entity","Empreus Support Pty Ltd · ABN 65 611 219 188"],["Address","Unit 18, 63 Wollongong Street, Fyshwick ACT 2609"],["Panels","DTA Hardware Marketplace"],["Services","Fourteen, under one roof"],["Hours","Mon–Fri, 9 AM – 5 PM · 24/7 monitoring"]].map(([k,v])=>(
             <div key={k}><strong style={{ display:"block", fontSize:10, letterSpacing:".26em", textTransform:"uppercase", color:"var(--ink-faint)", marginBottom:4 }}>{k}</strong><span style={{ fontSize:15, color:"var(--ink)" }}>{v}</span></div>
           ))}
         </div>

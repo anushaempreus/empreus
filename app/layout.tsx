@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "url": "https://empreusitsupport.com.au",
           "telephone": "+61261891322",
           "email": "info@empreus.com.au",
-          "address": { "@type": "PostalAddress", "streetAddress": "Unit 19, 63 Wollongong Street", "addressLocality": "Fyshwick", "addressRegion": "ACT", "postalCode": "2609", "addressCountry": "AU" },
+          "address": { "@type": "PostalAddress", "streetAddress": "Unit 18, 63 Wollongong Street", "addressLocality": "Fyshwick", "addressRegion": "ACT", "postalCode": "2609", "addressCountry": "AU" },
           "geo": { "@type": "GeoCoordinates", "latitude": -35.3244, "longitude": 149.1637 },
           "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" },
           "sameAs": ["https://www.facebook.com/empreusitsupport/","https://www.linkedin.com/company/empreus-it-support/"],

@@ -83,7 +83,6 @@ export default function Footer() {
             ["/journal","Journal"],
           ]} />
           <FootCol title="Client" links={[
-            ["/portals","Portals"],
             ["/service-request","Service Request"],
             ["/contact","Contact"],
             ["/legal","Legal & Privacy"],
@@ -94,7 +93,7 @@ export default function Footer() {
               {[["tel:0261891322","02 6189 1322"],["mailto:info@empreus.com.au","info@empreus.com.au"]].map(([href,label])=>(
                 <li key={href} style={{ marginBottom:9 }}><a href={href} style={{ fontSize:13, color:"var(--ink-mute)", transition:"color .2s" }} onMouseEnter={e=>(e.currentTarget.style.color="var(--orange)")} onMouseLeave={e=>(e.currentTarget.style.color="var(--ink-mute)")}>{label}</a></li>
               ))}
-              <li style={{ fontSize:13, color:"var(--ink-mute)", marginBottom:9 }}>Unit 19/63 Wollongong St</li>
+              <li style={{ fontSize:13, color:"var(--ink-mute)", marginBottom:9 }}>Unit 18/63 Wollongong St</li>
               <li style={{ fontSize:13, color:"var(--ink-mute)" }}>Fyshwick ACT 2609</li>
             </ul>
           </div>

@@ -6,24 +6,25 @@ const slab = "var(--font-slab, 'Roboto Slab', Georgia, serif)";
 
 const SERVICES = [
   { n:"N° 01", tag:"Flagship",       href:"/services/managed-it",           name:"Managed\nIT Services",        blurb:"Unlimited support, layered security, 24/7 monitoring.",          variant:"feature", wide:true },
-  { n:"N° 02", tag:"Compliance",     href:"/services/enterprise-government", name:"Enterprise &\nGovernment",    blurb:"Security governance, compliance, and infrastructure.",            variant:"" },
-  { n:"N° 03", tag:"Subscription",   href:"/services/it-as-a-service",       name:"Your IT,\nas a Service",      blurb:"Hardware, software, support — one monthly cost.",                 variant:"" },
-  { n:"N° 04", tag:"Infrastructure", href:"/services/cloud",                  name:"Cloud\nService",              blurb:"Migration, management, optimisation — by design.",               variant:"" },
-  { n:"N° 05", tag:"Connectivity",   href:"/services/communication",          name:"Communication",               blurb:"Internet, VoIP, SD-WAN, video conferencing.",                    variant:"" },
-  { n:"N° 06", tag:"Bespoke",        href:"/services/software-development",   name:"Software &\nApp Development", blurb:"Software that feels effortless. Built around your work.",        variant:"dark" },
-  { n:"N° 07", tag:"Continuity",     href:"/services/backup-recovery",        name:"Backup &\nRecovery",          blurb:"Automated backups, tested recovery, assured restore.",            variant:"" },
-  { n:"N° 08", tag:"Protection",     href:"/services/it-security",            name:"IT\nSecurity",                blurb:"Endpoint, EDR, governance — the invisible architecture.",        variant:"" },
-  { n:"N° 09", tag:"Assessment",     href:"/services/it-audit",               name:"IT\nAudit",                   blurb:"Risks illuminated, opportunities revealed, path forward.",       variant:"" },
-  { n:"N° 10", tag:"Critical",       href:"/services/datacentre",             name:"Datacentre\nServices",        blurb:"Monitored and managed with rigour. Continuity by design.",       variant:"" },
-  { n:"N° 11", tag:"Office",         href:"/services/managed-print",          name:"Print &\nManaged Print",      blurb:"Setup, servicing, repairs — the overlooked details.",            variant:"" },
-  { n:"N° 12", tag:"Online",         href:"/services/websites",               name:"Websites",                    blurb:"Domains, development, hosting, and backups.",                    variant:"" },
-  { n:"N° 13", tag:"Responsibility", href:"/services/recycling",              name:"Earth-friendly\nRecycling",   blurb:"Devices, cartridges, batteries — responsibly returned.",         variant:"" },
+  { n:"N° 02", tag:"Intelligence",   href:"/services/managed-ai",            name:"Managed\nAI Services",        blurb:"Copilot, deployed, governed, and made safe.",                    variant:"" },
+  { n:"N° 03", tag:"Compliance",     href:"/services/enterprise-government", name:"Enterprise &\nGovernment",    blurb:"Security governance, compliance, and infrastructure.",            variant:"" },
+  { n:"N° 04", tag:"Subscription",   href:"/services/it-as-a-service",       name:"Your IT,\nas a Service",      blurb:"Hardware, software, support — one monthly cost.",                 variant:"" },
+  { n:"N° 05", tag:"Infrastructure", href:"/services/cloud",                  name:"Cloud\nService",              blurb:"Migration, management, optimisation — by design.",               variant:"" },
+  { n:"N° 06", tag:"Connectivity",   href:"/services/communication",          name:"Communication",               blurb:"Internet, VoIP, SD-WAN, video conferencing.",                    variant:"" },
+  { n:"N° 07", tag:"Bespoke",        href:"/services/software-development",   name:"Software &\nApp Development", blurb:"Software that feels effortless. Built around your work.",        variant:"dark" },
+  { n:"N° 08", tag:"Continuity",     href:"/services/backup-recovery",        name:"Backup &\nRecovery",          blurb:"Automated backups, tested recovery, assured restore.",            variant:"" },
+  { n:"N° 09", tag:"Protection",     href:"/services/it-security",            name:"IT\nSecurity",                blurb:"Endpoint, EDR, governance — the invisible architecture.",        variant:"" },
+  { n:"N° 10", tag:"Assessment",     href:"/services/it-audit",               name:"IT\nAudit",                   blurb:"Risks illuminated, opportunities revealed, path forward.",       variant:"" },
+  { n:"N° 11", tag:"Critical",       href:"/services/datacentre",             name:"Datacentre\nServices",        blurb:"Monitored and managed with rigour. Continuity by design.",       variant:"" },
+  { n:"N° 12", tag:"Office",         href:"/services/managed-print",          name:"Print &\nManaged Print",      blurb:"Setup, servicing, repairs — the overlooked details.",            variant:"" },
+  { n:"N° 13", tag:"Online",         href:"/services/websites",               name:"Websites",                    blurb:"Domains, development, hosting, and backups.",                    variant:"" },
+  { n:"N° 14", tag:"Responsibility", href:"/services/recycling",              name:"Earth-friendly\nRecycling",   blurb:"Devices, cartridges, batteries — responsibly returned.",         variant:"" },
 ];
 
 const JOURNAL = [
-  { date:"28 May 2026 · Advisory", pull:"A practical guide to the Microsoft 365 July price increase.", cat:"Microsoft 365 · Pricing", title:"What changes for ACT clients on 1 July — and how to plan.", desc:"Month-to-month billing, mitigation steps, and what we're recommending.", alt:false },
-  { date:"14 May 2026 · Security",  pull:"Why we standardised on Huntress across every environment.",   cat:"EDR · Security",           title:"The case for managed EDR over traditional antivirus, in 2026.", desc:"Detection, response, and what 24/7 coverage actually buys you.", alt:true },
-  { date:"02 May 2026 · Studio",    pull:"The SOP library, now 48 documents strong.",                   cat:"Operations · Documentation", title:"Why we publish our SOPs — and what's in the library this quarter.", desc:"Transparency, repeatability, and the discipline of writing things down.", alt:false },
+  { date:"12 Jun 2026 · AI",       pull:"Copilot is coming to your Microsoft 365. Here's how to let it in safely.", cat:"AI · Governance",         title:"Copilot is coming to your Microsoft 365. Here's how to let it in safely.", desc:"Fix the data and permissions before you switch it on — or risk surfacing payroll to the whole company.", alt:false },
+  { date:"28 May 2026 · Advisory", pull:"A practical guide to the Microsoft 365 July price increase.", cat:"Microsoft 365 · Pricing", title:"What changes for ACT clients on 1 July — and how to plan.", desc:"Month-to-month billing, mitigation steps, and what we're recommending.", alt:true },
+  { date:"14 May 2026 · Security",  pull:"Why we standardised on Huntress across every environment.",   cat:"EDR · Security",           title:"The case for managed EDR over traditional antivirus, in 2026.", desc:"Detection, response, and what 24/7 coverage actually buys you.", alt:false },
 ];
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
         "@context":"https://schema.org","@type":"LocalBusiness","name":"Empreus IT Support",
         "image":"https://empreusitsupport.com.au/logo.png","@id":"https://empreusitsupport.com.au",
         "url":"https://empreusitsupport.com.au","telephone":"+61261891322",
-        "address":{"@type":"PostalAddress","streetAddress":"Unit 19, 63 Wollongong Street","addressLocality":"Fyshwick","addressRegion":"ACT","postalCode":"2609","addressCountry":"AU"},
+        "address":{"@type":"PostalAddress","streetAddress":"Unit 18, 63 Wollongong Street","addressLocality":"Fyshwick","addressRegion":"ACT","postalCode":"2609","addressCountry":"AU"},
         "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"},
         "sameAs":["https://www.facebook.com/empreusitsupport/","https://www.linkedin.com/company/empreus-it-support/"]
       })}} />
@@ -83,7 +84,7 @@ export default function Home() {
       <section style={{ maxWidth:"var(--max)", margin:"0 auto", padding:"clamp(60px,8vw,116px) clamp(16px,3.5vw,48px)" }}>
         <div style={{ textAlign:"center", marginBottom:"clamp(38px,5vw,60px)" }}>
           <div style={{ fontSize:11, letterSpacing:".3em", textTransform:"uppercase", color:"var(--ink-mute)", marginBottom:14, fontWeight:500 }}>What We Do</div>
-          <h2 style={{ fontFamily:slab, fontWeight:500, fontSize:"clamp(28px,3.6vw,48px)", lineHeight:1.05, letterSpacing:"-.005em" }}>Thirteen services. One team.</h2>
+          <h2 style={{ fontFamily:slab, fontWeight:500, fontSize:"clamp(28px,3.6vw,48px)", lineHeight:1.05, letterSpacing:"-.005em" }}>Fourteen services. One team.</h2>
           <p style={{ fontSize:"14.5px", color:"var(--ink-mute)", marginTop:14, maxWidth:600, marginLeft:"auto", marginRight:"auto", lineHeight:1.6 }}>From a Tuesday-morning helpdesk ticket to a multi-year compliance program — handled under one roof, to one standard.</p>
         </div>
         <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:"clamp(12px,1.4vw,18px)" }} className="collection-grid">

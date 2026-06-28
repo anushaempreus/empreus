@@ -6,24 +6,25 @@ const slab = "var(--font-slab,'Roboto Slab',Georgia,serif)";
 
 const SERVICES = [
   { n:"N° 01", tag:"Flagship",       href:"/services/managed-it",           name:"Managed IT Services",       blurb:"Unlimited support, layered security, 24/7 monitoring.", variant:"feature", wide:true },
-  { n:"N° 02", tag:"Compliance",     href:"/services/enterprise-government", name:"Enterprise & Government",   blurb:"Security governance, compliance, and infrastructure." },
-  { n:"N° 03", tag:"Subscription",   href:"/services/it-as-a-service",       name:"Your IT, as a Service",     blurb:"Hardware, software, support — one monthly cost." },
-  { n:"N° 04", tag:"Infrastructure", href:"/services/cloud",                  name:"Cloud Service",             blurb:"Migration, management, optimisation — by design." },
-  { n:"N° 05", tag:"Connectivity",   href:"/services/communication",          name:"Communication",             blurb:"Internet, VoIP, SD-WAN, video conferencing." },
-  { n:"N° 06", tag:"Bespoke",        href:"/services/software-development",   name:"Software & App Development",blurb:"Software that feels effortless. Built around your work.", variant:"dark" },
-  { n:"N° 07", tag:"Continuity",     href:"/services/backup-recovery",        name:"Backup & Recovery",         blurb:"Automated backups, tested recovery, assured restore." },
-  { n:"N° 08", tag:"Protection",     href:"/services/it-security",            name:"IT Security",               blurb:"Endpoint, EDR, governance — the invisible architecture." },
-  { n:"N° 09", tag:"Assessment",     href:"/services/it-audit",               name:"IT Audit",                  blurb:"Risks illuminated, opportunities revealed, path forward." },
-  { n:"N° 10", tag:"Critical",       href:"/services/datacentre",             name:"Datacentre Services",       blurb:"Monitored and managed with rigour. Continuity by design." },
-  { n:"N° 11", tag:"Office",         href:"/services/managed-print",          name:"Print & Managed Print",     blurb:"Setup, servicing, repairs — the overlooked details." },
-  { n:"N° 12", tag:"Online",         href:"/services/websites",               name:"Websites",                  blurb:"Domains, development, hosting, and backups." },
-  { n:"N° 13", tag:"Responsibility", href:"/services/recycling",              name:"Earth-friendly Recycling",  blurb:"Devices, cartridges, batteries — responsibly returned." },
+  { n:"N° 02", tag:"Intelligence",   href:"/services/managed-ai",            name:"Managed AI Services",       blurb:"Copilot, deployed, governed, and made safe." },
+  { n:"N° 03", tag:"Compliance",     href:"/services/enterprise-government", name:"Enterprise & Government",   blurb:"Security governance, compliance, and infrastructure." },
+  { n:"N° 04", tag:"Subscription",   href:"/services/it-as-a-service",       name:"Your IT, as a Service",     blurb:"Hardware, software, support — one monthly cost." },
+  { n:"N° 05", tag:"Infrastructure", href:"/services/cloud",                  name:"Cloud Service",             blurb:"Migration, management, optimisation — by design." },
+  { n:"N° 06", tag:"Connectivity",   href:"/services/communication",          name:"Communication",             blurb:"Internet, VoIP, SD-WAN, video conferencing." },
+  { n:"N° 07", tag:"Bespoke",        href:"/services/software-development",   name:"Software & App Development",blurb:"Software that feels effortless. Built around your work.", variant:"dark" },
+  { n:"N° 08", tag:"Continuity",     href:"/services/backup-recovery",        name:"Backup & Recovery",         blurb:"Automated backups, tested recovery, assured restore." },
+  { n:"N° 09", tag:"Protection",     href:"/services/it-security",            name:"IT Security",               blurb:"Endpoint, EDR, governance — the invisible architecture." },
+  { n:"N° 10", tag:"Assessment",     href:"/services/it-audit",               name:"IT Audit",                  blurb:"Risks illuminated, opportunities revealed, path forward." },
+  { n:"N° 11", tag:"Critical",       href:"/services/datacentre",             name:"Datacentre Services",       blurb:"Monitored and managed with rigour. Continuity by design." },
+  { n:"N° 12", tag:"Office",         href:"/services/managed-print",          name:"Print & Managed Print",     blurb:"Setup, servicing, repairs — the overlooked details." },
+  { n:"N° 13", tag:"Online",         href:"/services/websites",               name:"Websites",                  blurb:"Domains, development, hosting, and backups." },
+  { n:"N° 14", tag:"Responsibility", href:"/services/recycling",              name:"Earth-friendly Recycling",  blurb:"Devices, cartridges, batteries — responsibly returned." },
 ];
 
 export default function Services() {
   return (
     <>
-      <PageHead crumb="Empreus · Services" title="What we " accentWord="do." lede="Thirteen services. One team. From a Tuesday-morning helpdesk ticket to a multi-year compliance program — handled under one roof, to one standard." />
+      <PageHead crumb="Empreus · Services" title="What we " accentWord="do." lede="Fourteen services. One team. From a Tuesday-morning helpdesk ticket to a multi-year compliance program — handled under one roof, to one standard." />
       <section style={{ maxWidth:"var(--max)", margin:"0 auto", padding:"clamp(60px,8vw,116px) clamp(16px,3.5vw,48px)" }}>
         <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:"clamp(12px,1.4vw,18px)" }} className="svc-collection">
           {SERVICES.map(({ n, tag, href, name, blurb, variant, wide }) => {
@@ -55,7 +56,7 @@ export default function Services() {
         <h2 style={{ fontFamily:slab, fontWeight:500, fontSize:"clamp(24px,3vw,40px)", marginBottom:20 }}>Ready to begin?</h2>
         <p style={{ fontFamily:slab, fontSize:"clamp(16px,1.8vw,20px)", color:"var(--ink-mute)", marginBottom:36, maxWidth:500, margin:"0 auto 36px" }}>An honest first conversation</p>
         <div style={{ display:"flex", gap:32, justifyContent:"center", flexWrap:"wrap", fontSize:"14.5px" }}>
-          {[["Telephone","02 6189 1322"],["Email","support@empreus.com.au"],["In person","Unit 19, 63 Wollongong Street, Fyshwick ACT 2609"]].map(([k,v])=>(
+          {[["Telephone","02 6189 1322"],["Email","support@empreus.com.au"],["In person","Unit 18, 63 Wollongong Street, Fyshwick ACT 2609"]].map(([k,v])=>(
             <div key={k}><strong style={{ display:"block", fontSize:10, letterSpacing:".26em", textTransform:"uppercase", color:"var(--ink-faint)", marginBottom:4 }}>{k}</strong><span style={{ fontFamily:slab, fontSize:16 }}>{v}</span></div>
           ))}
         </div>

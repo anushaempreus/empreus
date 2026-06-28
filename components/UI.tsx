@@ -57,7 +57,7 @@ export function VisitBanner({ eyeline = "Visit us in" }: { eyeline?: string }) {
         <div>
           <div style={{ fontSize:11, letterSpacing:".3em", textTransform:"uppercase", color:"var(--ink-mute)", marginBottom:18, fontWeight:500 }}>Drop in or call ahead</div>
           {[
-            ["Address","Unit 19/63 Wollongong Street\nFyshwick ACT 2609"],
+            ["Address","Unit 18/63 Wollongong Street\nFyshwick ACT 2609"],
             ["Telephone","02 6189 1322"],
             ["Email","support@empreus.com.au"],
             ["Hours","Monday – Friday, 9:00 AM – 5:00 PM"],
@@ -84,7 +84,7 @@ export function ContactCTA({ label = "Let's talk." }: { label?: string }) {
           {label}<br /><span style={{ color:"var(--ink-mute)", fontSize:".8em" }}>No pitch, no obligation</span>
         </div>
         <div>
-          {[["Telephone","02 6189 1322","tel:0261891322"],["Email","support@empreus.com.au","mailto:support@empreus.com.au"],["In person","Unit 19, 63 Wollongong Street, Fyshwick ACT 2609",""]].map(([k,v,href])=>(
+          {[["Telephone","02 6189 1322","tel:0261891322"],["Email","support@empreus.com.au","mailto:support@empreus.com.au"],["In person","Unit 18, 63 Wollongong Street, Fyshwick ACT 2609",""]].map(([k,v,href])=>(
             <div key={k} style={{ marginBottom:18 }}>
               <strong style={{ display:"block", fontSize:10, letterSpacing:".26em", textTransform:"uppercase", color:"var(--ink-faint)", marginBottom:4, fontWeight:500 }}>{k}</strong>
               {href ? <a href={href} style={{ fontFamily:slab, fontSize:16, color:"var(--ink)" }}>{v}</a> : <span style={{ fontFamily:slab, fontSize:16, color:"var(--ink)" }}>{v}</span>}

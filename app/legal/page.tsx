@@ -132,7 +132,7 @@ export default function Legal() {
                   ["Email", "legal@empreus.com.au", "mailto:legal@empreus.com.au"],
                   ["Website", "empreusitsupport.com.au", "https://empreusitsupport.com.au"],
                   ["Phone", "02 6189 1322", "tel:0261891322"],
-                  ["Address", "Unit 19, 63 Wollongong St, Fyshwick ACT 2609", ""],
+                  ["Address", "Unit 18, 63 Wollongong St, Fyshwick ACT 2609", ""],
                 ].map(([label, value, href]) => (
                   <div key={label} style={{ marginBottom: 10 }}>
                     <strong style={{ fontSize: 11, letterSpacing: ".22em", textTransform: "uppercase", color: "var(--ink-faint)", display: "block", marginBottom: 2 }}>{label}</strong>
