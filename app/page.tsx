@@ -111,8 +111,9 @@ export default function Home() {
         <div>
           <div style={{ fontSize:11, letterSpacing:".3em", textTransform:"uppercase", color:"var(--ink-mute)", marginBottom:18, fontWeight:500 }}>The Studio</div>
           <h2 style={{ fontFamily:slab, fontWeight:500, fontSize:"clamp(22px,2.4vw,30px)", lineHeight:1.2, marginBottom:20, letterSpacing:"-.005em" }}>We&apos;re a small Canberra MSP, on purpose.</h2>
-          <p style={{ fontSize:"14.5px", lineHeight:1.7, color:"var(--ink-mute)", marginBottom:14, maxWidth:460 }}>Empreus is small by design. Our engineers work the same clients for years. They remember the cabinet your server lives in, the way your CFO prefers to be escalated, and which printer always jams on Tuesdays.</p>
-          <p style={{ fontSize:"14.5px", lineHeight:1.7, color:"var(--ink-mute)", marginBottom:14, maxWidth:460 }}>Our stack — SuperOps, Hudu, Huntress, Proofpoint, Cove — was chosen on merits, not marketing. Our standards stay high not because they&apos;re enforced, but because they&apos;re shared across the team.</p>
+          <p style={{ fontSize:"14.5px", lineHeight:1.7, color:"var(--ink-mute)", marginBottom:14, maxWidth:460 }}>Empreus is small by design. Our engineers work the same clients for years. They know the cabinet your server lives in, who&apos;s who across your team, and exactly how you like things done.</p>
+          <p style={{ fontSize:"14.5px", lineHeight:1.7, color:"var(--ink-mute)", marginBottom:14, maxWidth:460 }}>We run everything on Atlas Control — one platform for support, monitoring, ticketing, and documentation — with Huntress, Proofpoint, and Cove for security and backup. Our standards stay high not because they&apos;re enforced, but because they&apos;re shared across the team.</p>
+          <p style={{ fontSize:"14.5px", lineHeight:1.7, color:"var(--ink-mute)", marginBottom:14, maxWidth:460 }}>We work to a standard our clients eventually take for granted. That&apos;s the goal.</p>
           <DiscoverLink href="/about" style={{ marginTop:16 }}>More About Us</DiscoverLink>
         </div>
         <style>{`@media(max-width:900px){.editorial-grid{grid-template-columns:1fr!important;}}`}</style>
